@@ -8,9 +8,22 @@ import Alamofire
 
 typealias MoviesResponseClosure = (([Movie]?, Error?) -> Void)
 
+// Errors
+
 enum CustomError: Error {
     case failedToParseData
 }
+
+extension CustomError: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+        case .failedToParseData:
+            return "Could not parse data from Api"
+        }
+    }
+}
+
+// API
 
 class Api {
     static private var _shared: Api?
@@ -33,10 +46,14 @@ class Api {
 
             let decoder = JSONDecoder()
             guard let responseData = response.data,
-                  let movies = try? decoder.decode(GetMoviesResponse.self, from: responseData).results else {
+                  var movies = try? decoder.decode(GetMoviesResponse.self, from: responseData).results else {
                     completion(nil, CustomError.failedToParseData)
                     return
             }
+
+            movies.sort(by: { (lhs, rhs) -> Bool in
+                return lhs.episode_id ?? 0 < rhs.episode_id ?? 0
+            })
 
             completion(movies, nil)
         }

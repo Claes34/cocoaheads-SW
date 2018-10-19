@@ -13,6 +13,9 @@
 		4C1C1F2B2170DD1700F65AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1C1F292170DD1700F65AC9 /* Main.storyboard */; };
 		4C1C1F2D2170DD1800F65AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1C1F2C2170DD1800F65AC9 /* Assets.xcassets */; };
 		4C1C1F302170DD1800F65AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1C1F2E2170DD1800F65AC9 /* LaunchScreen.storyboard */; };
+		4C1C1F382174B79900F65AC9 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C1F372174B79900F65AC9 /* MovieTableViewCell.swift */; };
+		4C1C1F3A2174C3C000F65AC9 /* OpeningCrawlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C1F392174C3C000F65AC9 /* OpeningCrawlViewController.swift */; };
+		4CB4FCD62179CBC900C7DB4F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4FCD52179CBC900C7DB4F /* Constants.swift */; };
 		CB38A0242FC3D6E8CE33A197 /* MoviesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38A983CC6A664B2DA43E65 /* MoviesResponseModel.swift */; };
 		CB38A753CD7E673229607FDF /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB38A87B86E9425C03934F77 /* Api.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +28,9 @@
 		4C1C1F2C2170DD1800F65AC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1C1F2F2170DD1800F65AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1C1F312170DD1800F65AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1C1F372174B79900F65AC9 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		4C1C1F392174C3C000F65AC9 /* OpeningCrawlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningCrawlViewController.swift; sourceTree = "<group>"; };
+		4CB4FCD52179CBC900C7DB4F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9C59125B5AC42D59DD097E89 /* Pods-Star Wars Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Star Wars Movies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Star Wars Movies/Pods-Star Wars Movies.debug.xcconfig"; sourceTree = "<group>"; };
 		CB38A87B86E9425C03934F77 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		CB38A983CC6A664B2DA43E65 /* MoviesResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesResponseModel.swift; sourceTree = "<group>"; };
@@ -67,12 +73,15 @@
 			children = (
 				4C1C1F252170DD1700F65AC9 /* AppDelegate.swift */,
 				4C1C1F272170DD1700F65AC9 /* MoviesListViewController.swift */,
+				4C1C1F392174C3C000F65AC9 /* OpeningCrawlViewController.swift */,
 				4C1C1F292170DD1700F65AC9 /* Main.storyboard */,
 				4C1C1F2C2170DD1800F65AC9 /* Assets.xcassets */,
 				4C1C1F2E2170DD1800F65AC9 /* LaunchScreen.storyboard */,
 				4C1C1F312170DD1800F65AC9 /* Info.plist */,
 				CB38A5920246D510A1411736 /* WS */,
 				CB38AFA8A1609B2AC7FD26A6 /* Models */,
+				4C1C1F372174B79900F65AC9 /* MovieTableViewCell.swift */,
+				4CB4FCD52179CBC900C7DB4F /* Constants.swift */,
 			);
 			path = "Star Wars Movies";
 			sourceTree = "<group>";
@@ -222,8 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1C1F3A2174C3C000F65AC9 /* OpeningCrawlViewController.swift in Sources */,
+				4C1C1F382174B79900F65AC9 /* MovieTableViewCell.swift in Sources */,
 				4C1C1F282170DD1700F65AC9 /* MoviesListViewController.swift in Sources */,
 				4C1C1F262170DD1700F65AC9 /* AppDelegate.swift in Sources */,
+				4CB4FCD62179CBC900C7DB4F /* Constants.swift in Sources */,
 				CB38A753CD7E673229607FDF /* Api.swift in Sources */,
 				CB38A0242FC3D6E8CE33A197 /* MoviesResponseModel.swift in Sources */,
 			);
